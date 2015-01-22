@@ -1,6 +1,6 @@
 window.onload = function() {
 
-    var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+    var game = new Phaser.Game(800, 1200, Phaser.AUTO, '', { preload: preload, create: create, update: update });
     
     function preload() {
         
@@ -17,7 +17,7 @@ window.onload = function() {
         game.add.sprite(0, 0, 'background');
 
         // The player and its settings
-        player = game.add.sprite(250, game.world.height - 220, 'guy');
+        player = game.add.sprite(575, game.world.height - 220, 'guy');
     
         //  We need to enable physics on the player
         game.physics.arcade.enable(player);
