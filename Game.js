@@ -30,12 +30,13 @@ BasicGame.Game.prototype = {
     create: function () {
 
         //  Honestly, just about anything could go here. It's YOUR game after all. Eat your heart out!
-
+        game.load.spritesheet('dude', 'assets/guy.gif', 295, 247);
     },
 
     update: function () {
 
-        //  Honestly, just about anything could go here. It's YOUR game after all. Eat your heart out!
+        game.add.sprite(0, 0, 'dude');
+        
 
     },
 
