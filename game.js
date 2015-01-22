@@ -7,6 +7,8 @@ window.onload = function() {
         game.load.image('guy', 'assets/guy.gif');
         game.load.image('background', 'assets/background.jpg');
 
+        cursors = game.input.keyboard.createCursorKeys();
+
     }
     
     function create() {
