@@ -17,7 +17,7 @@ window.onload = function() {
         game.add.sprite(0, 0, 'background');
 
         // The player and its settings
-        player = game.add.sprite(32, game.world.height - 200, 'guy');
+        player = game.add.sprite(100, game.world.height - 220, 'guy');
     
         //  We need to enable physics on the player
         game.physics.arcade.enable(player);
