@@ -6,7 +6,7 @@
         function preload () {
 
             game.load.image('guy', 'assets/guy.gif');
-            game.load.image('space', 'assets/space.jpg');
+            game.load.image('background', 'assets/background.jpg');
 
         }
 
@@ -14,7 +14,7 @@
 
 
             //  A simple background for our game
-            game.add.sprite(0, 0, 'space');
+            game.add.sprite(0, 0, 'background');
 
             //create player
             var logo = game.add.sprite(game.world.centerX, game.world.centerY, 'guy');
