@@ -1,13 +1,3 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>hello phaser!</title>
-        <script src="phaser.min.js"></script>
-    </head>
-    <body>
-
-    <script type="text/javascript">
 
     window.onload = function() {
 
@@ -21,14 +11,13 @@
 
         function create () {
 
+            //create player
             var logo = game.add.sprite(game.world.centerX, game.world.centerY, 'guy');
             logo.anchor.setTo(0.5, 0.5);
+
+            //  We're going to be using physics, so enable the Arcade Physics system
+            game.physics.startSystem(Phaser.Physics.ARCADE);
 
         }
 
     };
-
-    </script>
-
-    </body>
-</html>
