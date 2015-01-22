@@ -23,6 +23,9 @@
             //  We're going to be using physics, so enable the Arcade Physics system
             game.physics.startSystem(Phaser.Physics.ARCADE);
 
+            //  We need to enable physics on the player
+            game.physics.arcade.enable(player);
+
         }
 
     };
