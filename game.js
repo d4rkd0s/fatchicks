@@ -53,7 +53,7 @@ window.onload = function() {
         //  We will enable physics for any object that is created in this group
         
         var ground = platforms.create(0, game.world.height - 100, 'ground');
-        ground.enableBody = true;
+        
 
         //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
         ground.scale.setTo(1, 1);
