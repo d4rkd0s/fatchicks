@@ -64,7 +64,6 @@ window.onload = function() {
         if (cursors.up.isDown && jumping == "0")
         {
             jumping=1;
-            $('#jump').play();
             player.body.velocity.y = -300;
             setTimeout(function(){
                 player.body.velocity.y = 300;
