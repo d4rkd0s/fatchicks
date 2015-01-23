@@ -7,17 +7,18 @@
 
 .btnctn{
 	position:absolute;
-	top:10px;
-	left:10px;
-	height:400px;
-	width:200px;
-	background-color: rgba(197, 66, 52, 0.2);
+	top: 136px;
+	left: 47px;
+	height: 233px;
+	width: 189px;
+	background-color: rgba(67, 89, 161, 0.6);
 	z-index: 1;
 }
 
 .start{
 	position:absolute;
-	top:10px;
-	left:10px;
+	top: 152px;
+	left: 59px;
+	width: 167px;
 	z-index: 2;
 }
