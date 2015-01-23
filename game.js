@@ -51,11 +51,12 @@ window.onload = function() {
         platforms = game.add.group();
     
         //  We will enable physics for any object that is created in this group
-        platforms.enableBody = true;
-        var ground = platforms.create(0, game.world.height - 64, 'ground');
-    
+        
+        var ground = platforms.create(0, game.world.height - 100, 'ground');
+        ground.enableBody = true;
+
         //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
-        ground.scale.setTo(2, 2);
+        ground.scale.setTo(1, 1);
     
         //  This stops it from falling away when you jump on it
         ground.body.immovable = true;
