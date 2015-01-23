@@ -30,6 +30,9 @@ window.onload = function() {
         fatty2 = game.add.sprite(450, game.world.height - 300, 'fatty2');
         fatty3 = game.add.sprite(450, game.world.height - 300, 'fatty3');
     
+        //start physics
+        game.physics.startSystem(Phaser.Physics.ARCADE);
+        
         //  We need to enable physics on the player
         game.physics.arcade.enable(player);
     
