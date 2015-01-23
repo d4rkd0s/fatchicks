@@ -55,15 +55,18 @@ window.onload = function() {
         }
         
         //  Allow the player to jump if they are touching the ground.
-        if (cursors.up.isDown)
+        if (cursors.up.isDown && jumping = 0)
         {
+            jumping=1;
             player.body.velocity.y = -200;
             setTimeout(function(){
                 player.body.velocity.y = 200;
             }, 200);
             setTimeout(function(){
                 player.body.velocity.y = 0;
+                jumping=1;
             }, 400);
+
             
         }
     
