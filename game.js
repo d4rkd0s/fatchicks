@@ -9,6 +9,7 @@ window.onload = function() {
 
         cursors = game.input.keyboard.createCursorKeys();
 
+        var jumping = 0;
     }
     
     function create() {
