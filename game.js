@@ -44,17 +44,8 @@ window.onload = function() {
         game.add.sprite(0, 0, 'background');
 
         //Game Objects
-        player = game.add.sprite(450, game.world.height - 500, 'guy');
-<<<<<<< Updated upstream
-        var fatty1 = game.add.sprite(0, 0, 'fatty1');
-        fatty1.body.velocity.x=20;
-=======
-<<<<<<< HEAD
-       var fatty1 = game.add.sprite(0, 0, 'fatty1');
-       fatty1.body.velocity.x=20;
-=======
->>>>>>> Stashed changes
-        ground = game.add.sprite(0, game.world.height - 92, 'ground');
+        player = game.add.sprite(450, game.world.height - 500, 'guy')
+    
         //fatty1 = game.add.sprite(450, game.world.height - 300, 'fatty1');
         //fatty2 = game.add.sprite(450, game.world.height - 300, 'fatty2');
         //fatty3 = game.add.sprite(450, game.world.height - 300, 'fatty3');
