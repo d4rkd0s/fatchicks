@@ -16,7 +16,7 @@ window.onload = function() {
         //game.load.image('fattyboss', 'assets/images/FatBoss.jpg')
         game.load.image('ground', 'assets/images/ground.png');
         cursors = game.input.keyboard.createCursorKeys();
-
+        game.load.audio('jumpsound', 'assets/sounds/jump.ogg');
         
     }
     
@@ -45,6 +45,11 @@ window.onload = function() {
 
         //Game Objects
         player = game.add.sprite(550, game.world.height - 300, 'guy');
+
+
+        //sound
+        fx = game.add.audio('jumpsound');
+        fx.allowMultiple = true;
 
         //hiding this for now its in the way
         //var fatty1 = game.add.sprite(0, 0, 'fatty1');
@@ -111,7 +116,7 @@ window.onload = function() {
         {
             
             player.body.velocity.y = -350;
-
+            fx.play('jumpsound');
             
         }
     
