@@ -20,6 +20,20 @@ window.onload = function() {
         
     }
     
+    var guy;
+    var hotdog;
+    var cupcake;
+    var fatty;
+
+    var score = 0;
+    var lives = 3;
+
+    var scoreText;
+    var livesText;
+    var introText;
+
+
+
     function create() {
 
         //  A simple background for our game
@@ -96,6 +110,10 @@ window.onload = function() {
         }
     
         }
-
+    function firehotdog() {
+    	hotdogOnGuy = false;
+    	hotdog.body.velocity.y = -50;
+    	hotdog.body.velocity.x = -150
+    }
 };
 });
