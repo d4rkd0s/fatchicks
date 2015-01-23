@@ -52,6 +52,7 @@ window.onload = function() {
     
 
         //ground
+        game.physics.enable(ground, Phaser.Physics.ARCADE);
         ground.body.immovable = true;
 
         //start physics
