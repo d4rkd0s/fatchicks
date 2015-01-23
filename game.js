@@ -14,6 +14,7 @@ window.onload = function() {
         //game.load.image('fatty2', 'assets/images/FatGirl2.jpg')
         //game.load.image('fatty3', 'assets/images/FatGirl3.jpg')
         //game.load.image('fattyboss', 'assets/images/FatBoss.jpg')
+        game.load.image('ground', 'assets/images/ground.png');
         cursors = game.input.keyboard.createCursorKeys();
 
         
@@ -32,6 +33,11 @@ window.onload = function() {
     
         //make the ground
         // Here we create the ground.
+        //  The platforms group contains the ground and the 2 ledges we can jump on
+        platforms = game.add.group();
+    
+        //  We will enable physics for any object that is created in this group
+        platforms.enableBody = true;
         var ground = platforms.create(0, game.world.height - 64, 'ground');
     
         //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
