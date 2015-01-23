@@ -45,13 +45,10 @@ window.onload = function() {
 
         //Gane Objects
         player = game.add.sprite(450, game.world.height - 500, 'guy');
-<<<<<<< HEAD
-       var fatty1 = game.add.sprite(0, 0, 'fatty1');
-       fatty1.body.velocity.x=20
-=======
+        var fatty1 = game.add.sprite(0, 0, 'fatty1');
+        fatty1.body.velocity.x=20
         ground = game.add.sprite(0, game.world.height - 92, 'ground');
         //fatty1 = game.add.sprite(450, game.world.height - 300, 'fatty1');
->>>>>>> FETCH_HEAD
         //fatty2 = game.add.sprite(450, game.world.height - 300, 'fatty2');
         //fatty3 = game.add.sprite(450, game.world.height - 300, 'fatty3');
     
