@@ -50,6 +50,8 @@ window.onload = function() {
         fatty1.body.velocity.x=20;
 
         ground = game.add.sprite(0, game.world.height - 92, 'ground');
+    
+
         //fatty1 = game.add.sprite(450, game.world.height - 300, 'fatty1');
         //fatty2 = game.add.sprite(450, game.world.height - 300, 'fatty2');
         //fatty3 = game.add.sprite(450, game.world.height - 300, 'fatty3');
@@ -126,10 +128,10 @@ window.onload = function() {
     	scoreText1.text = 'score: ' + score;
 
     	//If there are still lives, put hotdog back on man
-    	{
-    		if (lives.countLiving() >0)
+    
+    
 
-    	}
+    	
 
     }
 };
