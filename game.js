@@ -102,7 +102,7 @@ window.onload = function() {
         
 
         //  Allow the player to jump if they are touching the ground.
-        if (cursors.up.isDown && player.body.collideWorldBounds)
+        if (cursors.up.isDown && player.body.touching.ground)
         {
             
             player.body.velocity.y = -350;
