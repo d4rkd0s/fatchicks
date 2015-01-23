@@ -122,10 +122,10 @@ window.onload = function() {
     	scoreText1.text = 'score: ' + score;
 
     	//If there are still lives, put hotdog back on man
-    	{
-    		if (lives.countLiving() >0)
+    
+    
 
-    	}
+    	
 
     }
 };
