@@ -122,7 +122,7 @@ window.onload = function() {
     function firehotdog() {
     	hotdogOnGuy = false;
     	hotdog.body.velocity.y = -50;
-    	hotdog.body.velocity.x = -150
+    	hotdog.body.velocity.x = -150;
     	introText.visible = false;
     }
     function hotdogHitFatty (_hotdog, _fatty){
