@@ -1,0 +1,12 @@
+.bg{
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index: 0;
+}
+.start{
+	position:absolute;
+	top:10px;
+	left:10px;
+	z-index: 1;
+}
