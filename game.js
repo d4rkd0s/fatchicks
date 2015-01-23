@@ -46,7 +46,8 @@ window.onload = function() {
         //Game Objects
         player = game.add.sprite(450, game.world.height - 500, 'guy');
 
-        var fatty1 = game.add.sprite(0, 0, 'fatty1');
+        //hiding this for now its in the way
+        //var fatty1 = game.add.sprite(0, 0, 'fatty1');
         
 
         //Uncaught TypeError: Cannot read property 'velocity' of null
