@@ -70,7 +70,7 @@ window.onload = function() {
         
         //  Player physics properties. Give the little guy a slight bounce.
         player.body.bounce.y = 0.2;
-        player.body.gravity.y = 300;
+        player.body.gravity.y = 600;
         player.body.collideWorldBounds = true;
     
         
