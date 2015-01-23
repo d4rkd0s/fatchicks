@@ -6,8 +6,8 @@ window.onload = function() {
 
     function preload() {
         
-        game.load.image('guy', 'assets/guy.gif');
-        game.load.image('background', 'assets/background.jpg');
+        game.load.image('guy', 'assets/images/guy.gif');
+        game.load.image('background', 'assets/images/background.jpg');
 
         cursors = game.input.keyboard.createCursorKeys();
 
@@ -62,9 +62,9 @@ window.onload = function() {
         if (cursors.up.isDown && jumping == "0")
         {
             jumping=1;
-            player.body.velocity.y = -200;
+            player.body.velocity.y = -300;
             setTimeout(function(){
-                player.body.velocity.y = 200;
+                player.body.velocity.y = 300;
             }, 200);
             setTimeout(function(){
                 player.body.velocity.y = 0;
