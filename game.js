@@ -45,7 +45,7 @@ window.onload = function() {
 
         //Gane Objects
         player = game.add.sprite(450, game.world.height - 500, 'guy');
-        ground = game.add.sprite(450, game.world.height - 92, 'ground');
+        ground = game.add.sprite(0, game.world.height - 92, 'ground');
         //fatty1 = game.add.sprite(450, game.world.height - 300, 'fatty1');
         //fatty2 = game.add.sprite(450, game.world.height - 300, 'fatty2');
         //fatty3 = game.add.sprite(450, game.world.height - 300, 'fatty3');
