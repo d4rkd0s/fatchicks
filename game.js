@@ -28,7 +28,11 @@ window.onload = function() {
     var score = 0;
     var lives = 3;
 
-    var scoreText;
+    var scoreText1;
+    var scoreText2;
+    var scoreText3;
+    var scoreText4;
+    var scoreText5;
     var livesText;
     var introText;
 
@@ -115,6 +119,11 @@ window.onload = function() {
     	hotdogOnGuy = false;
     	hotdog.body.velocity.y = -50;
     	hotdog.body.velocity.x = -150
+    	introText.visible = false;
+    }
+    function hotdogHitFatty (_hotdog, _fatty){
+    	_hotdog.kill();
+
     }
 };
 });
