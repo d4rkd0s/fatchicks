@@ -46,12 +46,13 @@ window.onload = function() {
         //  This stops it from falling away when you jump on it
         ground.body.immovable = true;
 
+        game.physics.arcade.enableBody(player);
         //start physics
         game.physics.startSystem(Phaser.Physics.ARCADE);
 
         //  We need to enable physics on the player
         game.physics.arcade.enable(player);
-    
+        
         //  Player physics properties. Give the little guy a slight bounce.
         player.body.bounce.y = 0.2;
         player.body.gravity.y = 300;
