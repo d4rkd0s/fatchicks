@@ -44,7 +44,7 @@ window.onload = function() {
         game.add.sprite(0, 0, 'background');
 
         //Game Objects
-        player = game.add.sprite(450, game.world.height - 500, 'guy');
+        player = game.add.sprite(450, game.world.height - 300, 'guy');
 
         //hiding this for now its in the way
         //var fatty1 = game.add.sprite(0, 0, 'fatty1');
