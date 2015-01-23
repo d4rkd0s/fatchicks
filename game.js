@@ -2,6 +2,8 @@ window.onload = function() {
 
     var game = new Phaser.Game(1200, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
     
+    var jumping = "0";
+
     function preload() {
         
         game.load.image('guy', 'assets/guy.gif');
@@ -9,7 +11,7 @@ window.onload = function() {
 
         cursors = game.input.keyboard.createCursorKeys();
 
-        var jumping = "0";
+        
     }
     
     function create() {
@@ -28,7 +30,7 @@ window.onload = function() {
         player.body.gravity.y = 300;
         player.body.collideWorldBounds = true;
     
-        var jumping = "0";
+        
     }
     
     function update() {
@@ -55,6 +57,7 @@ window.onload = function() {
             
         }
         
+
         //  Allow the player to jump if they are touching the ground.
         if (cursors.up.isDown && jumping == "0")
         {
