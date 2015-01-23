@@ -8,7 +8,7 @@ window.onload = function() {
 
     function preload() {
         
-        game.load.image('guy', 'assets/images/guy.gif');
+        game.load.image('guy', 'assets/images/guy.png');
         game.load.image('background', 'assets/images/background.jpg');
         game.load.image('fatty1', 'assets/images/FatGirl1.jpg')
         //game.load.image('fatty2', 'assets/images/FatGirl2.jpg')
