@@ -25,11 +25,21 @@ window.onload = function() {
         game.add.sprite(0, 0, 'background');
 
         // The player and its settings
-        player=game.add.sprite(450, game.world.height - 300, 'guy');
+        player = game.add.sprite(450, game.world.height - 300, 'guy');
         //fatty1 = game.add.sprite(450, game.world.height - 300, 'fatty1');
         //fatty2 = game.add.sprite(450, game.world.height - 300, 'fatty2');
         //fatty3 = game.add.sprite(450, game.world.height - 300, 'fatty3');
     
+        //make the ground
+        // Here we create the ground.
+        var ground = platforms.create(0, game.world.height - 64, 'ground');
+    
+        //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
+        ground.scale.setTo(2, 2);
+    
+        //  This stops it from falling away when you jump on it
+        ground.body.immovable = true;
+
         //start physics
         game.physics.startSystem(Phaser.Physics.ARCADE);
 
@@ -70,17 +80,10 @@ window.onload = function() {
         
 
         //  Allow the player to jump if they are touching the ground.
-        if (cursors.up.isDown && jumping == "0")
+        if (cursors.up.isDown && player.body.touching.down)
         {
-            jumping=1;
-            player.body.velocity.y = -300;
-            setTimeout(function(){
-                player.body.velocity.y = 300;
-            }, 200);
-            setTimeout(function(){
-                player.body.velocity.y = 0;
-                jumping=0;
-            }, 400);
+            
+            player.body.velocity.y = -350;
 
             
         }
