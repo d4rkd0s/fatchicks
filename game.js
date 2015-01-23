@@ -52,7 +52,7 @@ window.onload = function() {
     
 
         //ground
-
+        ground.body.immovable = true;
 
         //start physics
         game.physics.startSystem(Phaser.Physics.ARCADE);
