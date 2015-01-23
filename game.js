@@ -71,8 +71,8 @@ window.onload = function() {
         
 
         //ground collision
-        game.physics.arcade.collide(player, ground, collisionHandler, null, this);
-        
+        game.physics.arcade.collide(player, ground);
+
         //  Reset the players velocity (movement)
         player.body.velocity.x = 0;
     
