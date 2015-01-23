@@ -20,7 +20,7 @@ window.onload = function() {
         
     }
     
-    var guy;
+    var health;
     var hotdog;
     var cupcake;
     var fatty;
