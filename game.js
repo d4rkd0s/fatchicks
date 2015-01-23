@@ -43,36 +43,22 @@ window.onload = function() {
         //  A simple background for our game
         game.add.sprite(0, 0, 'background');
 
-        // The player and its settings
+        //Gane Objects
         player = game.add.sprite(450, game.world.height - 500, 'guy');
+        ground = game.add.sprite(450, game.world.height - 92, 'ground');
         //fatty1 = game.add.sprite(450, game.world.height - 300, 'fatty1');
         //fatty2 = game.add.sprite(450, game.world.height - 300, 'fatty2');
         //fatty3 = game.add.sprite(450, game.world.height - 300, 'fatty3');
     
-        //make the ground
-        // Here we create the ground.
-        //  The platforms group contains the ground and the 2 ledges we can jump on
-        platforms = game.add.group();
-    
-        //  We will enable physics for any object that is created in this group
-        var ground = platforms.create(0, game.world.height - 92, 'ground');
-        
-        //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
-        ground.scale.setTo(1, 1);
-    
-        //  This stops it from falling away when you jump on it
-        //ground.body.immovable = true;
+
+        //ground
 
 
         //start physics
         game.physics.startSystem(Phaser.Physics.ARCADE);
-
-
-        //  We need to enable physics on the player
         game.physics.arcade.enable(player);
         game.physics.arcade.enableBody(player);
-        
-        //  Player physics properties. Give the little guy a slight bounce.
+        //Player physics properties. 
         player.body.bounce.y = 0.2;
         player.body.gravity.y = 600;
         player.body.collideWorldBounds = true;
