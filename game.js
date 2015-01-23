@@ -9,7 +9,7 @@ window.onload = function() {
 
         cursors = game.input.keyboard.createCursorKeys();
 
-        var jumping = 0;
+        var jumping = "0";
     }
     
     function create() {
@@ -28,7 +28,7 @@ window.onload = function() {
         player.body.gravity.y = 300;
         player.body.collideWorldBounds = true;
     
-            
+        var jumping = "0";
     }
     
     function update() {
@@ -65,7 +65,7 @@ window.onload = function() {
             }, 200);
             setTimeout(function(){
                 player.body.velocity.y = 0;
-                jumping=1;
+                jumping=0;
             }, 400);
 
             
