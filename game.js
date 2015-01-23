@@ -58,8 +58,13 @@ window.onload = function() {
         if (cursors.up.isDown)
         {
             player.body.velocity.y = -50;
-            player.body.velocity.y = 50;
-            player.body.velocity.y = 0;
+            setTimeout(function(){
+                player.body.velocity.y = 50;
+            }, 500);
+            setTimeout(function(){
+                player.body.velocity.y = 0;
+            }, 1000);
+            
         }
     
         }
