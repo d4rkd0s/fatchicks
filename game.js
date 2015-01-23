@@ -32,7 +32,7 @@ window.onload = function() {
     var scoreText2;
     var scoreText3;
     var scoreText4;
-    var scoreText5;
+    var scoreCounter;
     var livesText;
     var introText;
 
@@ -45,7 +45,8 @@ window.onload = function() {
 
         // The player and its settings
         player = game.add.sprite(450, game.world.height - 500, 'guy');
-        //fatty1 = game.add.sprite(450, game.world.height - 300, 'fatty1');
+       var fatty1 = game.add.sprite(0, 0, 'fatty1');
+       fatty1.body.velocity.x=20
         //fatty2 = game.add.sprite(450, game.world.height - 300, 'fatty2');
         //fatty3 = game.add.sprite(450, game.world.height - 300, 'fatty3');
     
@@ -115,6 +116,10 @@ window.onload = function() {
         }
     
         }
+    function intro (){
+    	introText.text = 'Welcome! Feed those fatties!';
+    	introText.visible = true;
+    }
     function firehotdog() {
     	hotdogOnGuy = false;
     	hotdog.body.velocity.y = -50;
@@ -123,6 +128,14 @@ window.onload = function() {
     }
     function hotdogHitFatty (_hotdog, _fatty){
     	_hotdog.kill();
+    	score += 1;
+    	scoreText1.text = 'score: ' + score;
+
+    	//If there are still lives, put hotdog back on man
+    	{
+    		if (lives.countLiving() >0)
+
+    	}
 
     }
 };
