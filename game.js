@@ -10,10 +10,10 @@ window.onload = function() {
         
         game.load.image('guy', 'assets/images/guy.gif');
         game.load.image('background', 'assets/images/background.jpg');
-        game.load.image('fatty1', 'assets/images/FatGirl1.jpg')
-        game.load.image('fatty2', 'assets/images/FatGirl2.jpg')
-        game.load.image('fatty3', 'assets/images/FatGirl3.jpg')
-        game.load.image('fattyboss', 'assets/images/FatBoss.jpg')
+        //game.load.image('fatty1', 'assets/images/FatGirl1.jpg')
+        //game.load.image('fatty2', 'assets/images/FatGirl2.jpg')
+        //game.load.image('fatty3', 'assets/images/FatGirl3.jpg')
+        //game.load.image('fattyboss', 'assets/images/FatBoss.jpg')
         cursors = game.input.keyboard.createCursorKeys();
 
         
@@ -26,13 +26,13 @@ window.onload = function() {
 
         // The player and its settings
         player=game.add.sprite(450, game.world.height - 300, 'guy');
-        fatty1 = game.add.sprite(450, game.world.height - 300, 'fatty1');
-        fatty2 = game.add.sprite(450, game.world.height - 300, 'fatty2');
-        fatty3 = game.add.sprite(450, game.world.height - 300, 'fatty3');
+        //fatty1 = game.add.sprite(450, game.world.height - 300, 'fatty1');
+        //fatty2 = game.add.sprite(450, game.world.height - 300, 'fatty2');
+        //fatty3 = game.add.sprite(450, game.world.height - 300, 'fatty3');
     
         //start physics
         game.physics.startSystem(Phaser.Physics.ARCADE);
-        
+
         //  We need to enable physics on the player
         game.physics.arcade.enable(player);
     
