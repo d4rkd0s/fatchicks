@@ -25,14 +25,10 @@ window.onload = function() {
         game.add.sprite(0, 0, 'background');
 
         // The player and its settings
-<<<<<<< HEAD
         player=game.add.sprite(450, game.world.height - 300, 'guy');
-=======
-        player = game.add.sprite(450, game.world.height - 300, 'guy');
         fatty1 = game.add.sprite(450, game.world.height - 300, 'fatty1');
         fatty2 = game.add.sprite(450, game.world.height - 300, 'fatty2');
         fatty3 = game.add.sprite(450, game.world.height - 300, 'fatty3');
->>>>>>> FETCH_HEAD
     
         //  We need to enable physics on the player
         game.physics.arcade.enable(player);
