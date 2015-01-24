@@ -113,7 +113,7 @@ window.onload = function() {
         }
         else
         {
-            
+            lookdir = "right";
         }
         
 
