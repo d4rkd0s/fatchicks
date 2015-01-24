@@ -114,7 +114,7 @@ window.onload = function() {
         //  Allow the player to jump if they are touching the ground.
         if (cursors.up.isDown && player.y > 430)
         {
-            jumpsound.play();
+            jumpsound.play(0, 50);
             player.body.velocity.y = -350;
             
         }
