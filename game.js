@@ -36,6 +36,8 @@ window.onload = function() {
     var livesText;
     var introText;
 
+    var lookdir;
+
 
 
     function create() {
@@ -78,7 +80,9 @@ window.onload = function() {
         player.body.bounce.y = 0.3;
         player.body.gravity.y = 800;
         player.body.collideWorldBounds = true;
-    
+        
+        //start the player looking right
+        lookdir = "right";
         
     }
     
@@ -95,14 +99,16 @@ window.onload = function() {
         {
             //  Move to the left
             player.body.velocity.x = -200;
-    
+            //make the player look left
+            lookdir = "left";
             
         }
         else if (cursors.right.isDown)
         {
             //  Move to the right
             player.body.velocity.x = 200;
-    
+            //make the player look right
+            lookdir = "right";
             
         }
         else
@@ -119,6 +125,14 @@ window.onload = function() {
             
         }
     
+        if (game.input.keyboard.isDown(Phaser.Keyboard.SPACE))
+        {
+            ufo.x -= speed;
+            ufo.angle = -15;
+            leftBtn.alpha = 0.6;
+        }
+
+
         }
     function intro (){
     	introText.text = 'Welcome! Feed those fatties!';
