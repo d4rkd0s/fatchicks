@@ -16,7 +16,7 @@ window.onload = function() {
         //game.load.image('fattyboss', 'assets/images/FatBoss.jpg')
         game.load.image('ground', 'assets/images/ground.png');
         cursors = game.input.keyboard.createCursorKeys();
-        game.load.audio('jumpsound', 'assets/sounds/jump.ogg');
+        game.load.audio('jumpsound', 'assets/sounds/beep.wav');
         
     }
     
