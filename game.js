@@ -47,10 +47,10 @@ window.onload = function() {
         player = game.add.sprite(450, game.world.height - 500, 'guy');
 
        
-        var image = game.add.sprite(350,game.world.height - 500, 'fatty1');
+        var fatty1 = game.add.sprite(350,game.world.height - 500, 'fatty1');
         
         game.physics.enable(image, Phaser.Physics.ARCADE);
-        image.body.velocity.x=120;
+        fatty1.body.velocity.x=120;
 
         //Uncaught TypeError: Cannot read property 'velocity' of null
         //fatty1.body.velocity.x=20;
