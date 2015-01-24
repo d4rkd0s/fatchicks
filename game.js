@@ -51,7 +51,6 @@ window.onload = function() {
         player = game.add.sprite(550, game.world.height - 300, 'guy');
 
 
-<<<<<<< HEAD
         //sound
         jumpsound = game.add.audio('jumpsound');
         jumpsound.allowMultiple = false;
@@ -59,14 +58,9 @@ window.onload = function() {
         //hiding this for now its in the way
         //var fatty1 = game.add.sprite(0, 0, 'fatty1');
         
-=======
-        //*THIS will allow image of fatty to move across screen. Background needs to be
-        //transparented. 
-        //var image = game.add.sprite(350,game.world.height - 500, 'fatty1');
-        game.physics.enable(image, Phaser.Physics.ARCADE);
-        //fatty1.body.velocity.x=120;
->>>>>>> FETCH_HEAD
 
+        //Uncaught TypeError: Cannot read property 'velocity' of null
+        //fatty1.body.velocity.x=20;
 
         ground = game.add.sprite(0, game.world.height - 92, 'ground');
     
