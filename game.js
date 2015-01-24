@@ -6,20 +6,6 @@ window.onload = function() {
     
     var jumping = "0";
 
-    function preload() {
-        
-        game.load.image('guy', 'assets/images/guy.png');
-        game.load.image('background', 'assets/images/background.jpg');
-        game.load.image('fatty1', 'assets/images/FatGirl1.jpg')
-        //game.load.image('fatty2', 'assets/images/FatGirl2.jpg')
-        //game.load.image('fatty3', 'assets/images/FatGirl3.jpg')
-        //game.load.image('fattyboss', 'assets/images/FatBoss.jpg')
-        game.load.image('ground', 'assets/images/ground.png');
-        cursors = game.input.keyboard.createCursorKeys();
-        game.load.audio('jumpsound', 'assets/sounds/jump.wav');
-        
-    }
-    
     var health;
     var hotdog;
     var cupcake;
@@ -37,6 +23,22 @@ window.onload = function() {
     var introText;
 
     var lookdir;
+
+    function preload() {
+        
+        game.load.image('guy', 'assets/images/guy.png');
+        game.load.image('background', 'assets/images/background.jpg');
+        game.load.image('fatty1', 'assets/images/FatGirl1.jpg')
+        //game.load.image('fatty2', 'assets/images/FatGirl2.jpg')
+        //game.load.image('fatty3', 'assets/images/FatGirl3.jpg')
+        //game.load.image('fattyboss', 'assets/images/FatBoss.jpg')
+        game.load.image('ground', 'assets/images/ground.png');
+        cursors = game.input.keyboard.createCursorKeys();
+        game.load.audio('jumpsound', 'assets/sounds/jump.wav');
+        
+    }
+    
+    
 
 
 
@@ -113,7 +115,7 @@ window.onload = function() {
         }
         else
         {
-            lookdir = "right";
+            
         }
         
 
