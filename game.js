@@ -116,7 +116,7 @@ window.onload = function() {
         {
             
             player.body.velocity.y = -350;
-            fx.play('jumpsound');
+            fx.play(jumpsound);
             
         }
     
