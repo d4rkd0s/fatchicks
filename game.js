@@ -75,7 +75,7 @@ window.onload = function() {
         game.physics.arcade.enable(player);
         game.physics.arcade.enableBody(player);
         //Player physics properties. 
-        player.body.bounce.y = 0.2;
+        player.body.bounce.y = 1.0;
         player.body.gravity.y = 800;
         player.body.collideWorldBounds = true;
     
