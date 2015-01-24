@@ -48,8 +48,9 @@ window.onload = function() {
 
 
         //sound
-        fx = game.add.audio('jumpsound');
-        fx.allowMultiple = true;
+        jumpsound = game.add.audio('jumpsound');
+        jumpsound.allowMultiple = true;
+        jumpsound.addMarker('jumpsound', 0, 2.0);
 
         //hiding this for now its in the way
         //var fatty1 = game.add.sprite(0, 0, 'fatty1');
@@ -116,7 +117,7 @@ window.onload = function() {
         {
             
             player.body.velocity.y = -350;
-            fx.play(jumpsound);
+            jumpsound.play();
             
         }
     
