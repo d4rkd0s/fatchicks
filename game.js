@@ -76,7 +76,7 @@ window.onload = function() {
         game.physics.arcade.enableBody(player);
         //Player physics properties. 
         player.body.bounce.y = 0.2;
-        player.body.gravity.y = 600;
+        player.body.gravity.y = 800;
         player.body.collideWorldBounds = true;
     
         
@@ -94,14 +94,14 @@ window.onload = function() {
         if (cursors.left.isDown)
         {
             //  Move to the left
-            player.body.velocity.x = -150;
+            player.body.velocity.x = -200;
     
             
         }
         else if (cursors.right.isDown)
         {
             //  Move to the right
-            player.body.velocity.x = 150;
+            player.body.velocity.x = 200;
     
             
         }
@@ -115,7 +115,7 @@ window.onload = function() {
         if (cursors.up.isDown && player.y > 430)
         {
             jumpsound.play();
-            player.body.velocity.y = -350;
+            player.body.velocity.y = -450;
             
         }
     
