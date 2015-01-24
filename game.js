@@ -48,8 +48,8 @@ window.onload = function() {
 
 
         //sound
-        fx = game.add.audio('jumpsound');
-        fx.allowMultiple = true;
+        //fx = game.add.audio('jumpsound');
+        //fx.allowMultiple = true;
 
         //hiding this for now its in the way
         //var fatty1 = game.add.sprite(0, 0, 'fatty1');
