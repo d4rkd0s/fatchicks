@@ -50,7 +50,6 @@ window.onload = function() {
         //sound
         jumpsound = game.add.audio('jumpsound');
         jumpsound.allowMultiple = false;
-        jumpsound.addMarker('begin', 0, 1.0);
 
         //hiding this for now its in the way
         //var fatty1 = game.add.sprite(0, 0, 'fatty1');
@@ -115,7 +114,7 @@ window.onload = function() {
         //  Allow the player to jump if they are touching the ground.
         if (cursors.up.isDown && player.y > 430)
         {
-            jumpsound.play('begin', 0.2);
+            jumpsound.play();
             player.body.velocity.y = -350;
             
         }
