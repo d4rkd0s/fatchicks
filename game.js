@@ -46,11 +46,11 @@ window.onload = function() {
         //Game Objects
         player = game.add.sprite(450, game.world.height - 500, 'guy');
 
-       
-        var fatty1 = game.add.sprite(350,game.world.height - 500, 'fatty1');
-        
-        game.physics.enable(image, Phaser.Physics.ARCADE);
-        fatty1.body.velocity.x=120;
+        //*THIS will allow image of fatty to move across screen. Background needs to be
+        //transparented. 
+        //var fatty1 = game.add.sprite(350,game.world.height - 500, 'fatty1');
+        //game.physics.enable(image, Phaser.Physics.ARCADE);
+        //fatty1.body.velocity.x=120;
 
         //Uncaught TypeError: Cannot read property 'velocity' of null
         //fatty1.body.velocity.x=20;
