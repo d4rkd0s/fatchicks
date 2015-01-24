@@ -50,7 +50,7 @@ window.onload = function() {
         //sound
         jumpsound = game.add.audio('jumpsound');
         jumpsound.allowMultiple = true;
-        jumpsound.addMarker('jumpsound');
+        jumpsound.addMarker('jumpsound', 0, 3.0);
 
         //hiding this for now its in the way
         //var fatty1 = game.add.sprite(0, 0, 'fatty1');
